@@ -1,0 +1,19 @@
+import pandas as pd
+
+# Define URLs
+data = {
+    "URL": [
+        "https://www.nytimes.com/2020/09/02/opinion/remote-learning-coronavirus.html",
+        "https://www.washingtonpost.com/technology/2020/09/25/privacy-check-blacklight/",
+        "https://edition.cnn.com/travel/article/scenic-airport-landings-2020/index.html",
+        "https://www.reuters.com/article/us-health-coronavirus-global-deaths/global-coronavirus-deaths-pass-agonizing-milestone-of-1-million-idUSKBN26K08Y"
+    ]
+}
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+# Save to Excel
+df.to_excel("Input.xlsx", index=False)
+
+print("✅ Input.xlsx created successfully!")
